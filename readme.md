@@ -39,6 +39,8 @@ $ python3 demo.py
 $ python3 clock.py
 $ python3 hue.py
 ```
+<img src="img/demo.gif" alt="demo" width="200"/>
+
 If the library examples look funny, upgrade pygame:
 ```
 $ sudo python3 -m pip install pygame --upgrade
