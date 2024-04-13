@@ -13,11 +13,16 @@ WIDTH, HEIGHT = 480, 480
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("Pygame Animated Sprites Example")
 
+# Locate sprite folder
+script_dir = os.path.dirname(os.path.realpath(__file__))
+project_dir = os.path.dirname(script_dir)
+sprite_folder = os.path.join(project_dir, "img/animation")
+
 # Load images for animation
 sprite_images = []
 for i in range(000, 186):
     formatted_i = "{:03d}".format(i) # hack to get leading zeros in i (cfr. img names)
-    image_path = os.path.join("img\\animation", f"frame_{formatted_i}_delay-0.04s.gif")
+    image_path = os.path.join(sprite_folder, f"frame_{formatted_i}_delay-0.04s.gif")
     image = pygame.image.load(image_path).convert_alpha()
     sprite_images.append(image)
 
