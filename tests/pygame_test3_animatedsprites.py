@@ -32,7 +32,6 @@ sprite_height = sprite_images[0].get_height()
 
 # Define Colors
 BROWN = (101, 32, 32)
-YELLOW = (255, 210, 0)
 
 # Set up clock
 clock = pygame.time.Clock()
