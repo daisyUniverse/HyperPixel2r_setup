@@ -1,4 +1,4 @@
-# This is a simple pygame script exploring cuustom fonts and text rendering
+# This is a simple pygame script exploring custom fonts and text rendering
 
 # Import libs
 import pygame
