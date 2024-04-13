@@ -48,11 +48,12 @@ If the library examples look funny, upgrade pygame:
 $ sudo python3 -m pip install pygame --upgrade
 ```
 ## tests
+### adding text
 Adding text with custom fonts is rather straightforward. See [pygame test 2](tests/pygame_test2_text.py).
 
 <img src="img/demo2.jpg" alt="demo2" width="200"/>
 
-## animated sprites
+### working with animated sprites
 To work with gif files, I needed to install a couple of dependencies first. To solve this error message:   
 ```Python
 # Python error message
