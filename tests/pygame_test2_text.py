@@ -17,8 +17,14 @@ pygame.display.set_caption("Font test")
 BLUE = (30, 100, 200)
 YELLOW = (255, 210, 0)
 
+# Locate custom font
+script_dir = os.path.dirname(os.path.realpath(__file__))
+project_dir = os.path.dirname(script_dir)
+font_folder = os.path.join(project_dir, "fonts")
+font_file = "Jersey10-Regular.ttf"
+font_path = os.path.join(font_folder, font_file)
+
 # Load custom font
-font_path = os.path.join("fonts", "Jersey10-Regular.ttf")
 custom_font = pygame.font.Font(font_path, 36)
 
 # Game loop
