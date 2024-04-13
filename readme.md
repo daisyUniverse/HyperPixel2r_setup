@@ -9,6 +9,8 @@ In this project, I'm using the Hyperpixel with the **Raspi Zero W**.
 The drivers only work with **Raspberry Pi OS Buster** (last time I checked). So burn an SD card with the [legacy OS](https://downloads.raspberrypi.com/raspios_lite_armhf/images/raspios_lite_armhf-2021-05-28/). (supposedly support for Bullseye is being worked on).
 It's easiers to work with [SSH](https://www.raspberrypi.com/documentation/computers/remote-access.html#introduction-to-remote-access). So set-up everything correctly during set-up.
 
+## basic set-up
+
 Make sure to update after a fresh install
 ```
 $ sudo apt install python3-pip
@@ -45,3 +47,24 @@ If the library examples look funny, upgrade pygame:
 ```
 $ sudo python3 -m pip install pygame --upgrade
 ```
+## tests
+Adding text with custom fonts is rather straightforward. See [pygame test 2](tests/pygame_test2_text.py).
+
+<img src="img/demo2.jpg" alt="demo2" width="200"/>
+
+## animated sprites
+To work with gif files, I needed to install a couple of dependencies first. To solve this error message:   
+```Python
+# Python error message
+pygame.error: File is not a Windows BMP file   
+image = pygame.image.load(image_path).convert_alpha()
+```
+
+**Solution**   
+Install pygame dependencies. After that it should work. See example [pygame test 3](tests/pygame_test3_animatedsprites.py).
+```
+ $ sudo apt install libsdl2-dev libsdl2-mixer-dev libsdl2-gfx-dev libsdl2-image-dev libsdl2-net-dev libsdl2-ttf-dev
+```
+<img src="img/demo3.gif" alt="demo" width="200"/>
+
+
