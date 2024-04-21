@@ -4,6 +4,7 @@
 import pygame
 import sys
 import os
+import evdev
 
 # Initialize Pygame
 pygame.init()
